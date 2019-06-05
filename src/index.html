@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <!-- Overlay -->
+    <div id="overlay" class="overlay is--hidden"></div>
+    <!-- <h1>Photo Gallery</h1> -->
+
+    <!-- css loader -->
+    <div class="lds-roller is--hidden">
+        <h6>Uploading, please wait...</h6>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!-- // End of css loader // -->
+
+    <main class="container">
+        <!-- New photo form -->
+        <form id="add-new-photo-form" class="add-new-photo-form is--hidden">
+            <legend class="text-center mt-4">Upload a new photo</legend>
+            <div class="add-new-photo-form__inner">
+                <div class="form-group d-flex flex-column">
+                    <input id="title" type="text">
+                    <label for="title">Photo title</label>
+                </div>
+                <div class="form-group">
+                    <input id="upload-photo-input" class="form-control-file" style="display: none;" type="file" ref="fileInput"
+                        accept="image/*">
+                </div>
+                <ul id="error-message-wrapper" class="form-group is-hidden"></ul>
+                <img id="new-image" class="is--hidden" src="" title="profile image" />
+                <!-- <div class="input"> -->
+                <!-- <button @click.prevent="uploadImage" class="btn btn-info">Upload Profile Image</button> -->
+                <!-- </div> -->
+                <button id="select-photo" class="btn btn-outline-secondary">Choose Photo</button>
+                <button id="upload-photo" class="btn btn-outline-secondary">Upload Photo</button>
+            </div>
+        </form>
+        <!-- // END of New photo form // -->
+        <div class="add-image-wrapper" id="add-image"><span class="add-image"></span>
+            <h6 class="lead">Add new Photo</h6>
+        </div>
+        <div class="container__photo is--visible">
+            <ul id="slides" class="slides"></ul>
+            <div class="controls previous" id="previous-arrow"></div>
+            <div class="controls next" id="next-arrow"></div>
+        </div>
+        <div class="container-thumbnails" id="container-thumbnails">
+            <ul class="thumbnails" id="thumbnails-wrapper"></ul>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+//example import from typekit
+//@import url("https://use.typekit.net/adh4bgb.css");
+
+//example import from google fonts
+//@import url('https://fonts.googleapis.com/css?family=Caveat+Brush');
+
+
+//example import fonts from local folder
+//@font-face {
+//	font-family: 'ITC Avant Garde Gothic Std Demi';
+//	src: url('../fonts/ITCAvantGardeStd-Demi.eot');
+//	src: url('../fonts/ITCAvantGardeStd-Demi.eot?#iefix') format('embedded-opentype'),
+//	url('../fonts/ITCAvantGardeStd-Demi.woff2') format('woff2'),
+//	url('../fonts/ITCAvantGardeStd-Demi.woff') format('woff'),
+//	url('../fonts/ITCAvantGardeStd-Demi.ttf') format('truetype');
+//	font-weight: normal;
+//	font-style: normal;
+//}
+
+
+// body,
+// button,
+// input,
+// select,
+// textarea {
+
+// 	font-weight: 300;
+// 	font-stretch: normal;
+// 	color: $colour-dark;
+// 	//font-family: $font-body-light;
+// }
+
+// h1, h2, h3, h4, h5, h6 {
+
+// 	clear: both;
+// 	margin: 0;
+// 	font-weight: normal;
+// 	font-family: #000000;
+// }
+
+// h1 {
+
+// 	text-transform: uppercase;
+// 	color: #000000;
+// 	font-family: $font-head2;
+// 	text-align: center;
+// 	line-height: 1em;
+// }
+
+// h2 {
+
+// 	font-size: 3.2em;
+// 	font-family: $font-head2;
+// }
+
+// h3 {
+
+// 	font-size: 1.6em;
+// 	font-family: $font-body;
+// }
+
+// h4 {
+
+// 	font-size: 1.6em;
+// 	font-family: $font-body;
+// }
+
+// h5 {
+
+// 	font-size: 1.4em;
+// 	//font-family: $font-body-bold;
+// 	//margin-bottom: .4em;
+// 	font-family: $font-body;
+// }
+
+// h6 {
+
+// 	font-size: 1.4em;
+// 	margin-bottom: .4em;
+// }
+
+// p {
+
+// 	font-family: $font-body;
+// 	color: $colour-light;
+// 	font-size: 1.6em;
+// 	line-height: 1.2;
+
+// 	@include bp-md {
+// 		font-size: 1.8em;
+// 		line-height: 1.4;
+// 	}
+// }
+
+// a {
+
+// 	color: $colour-light;
+// 	text-decoration: none;
+// 	border-bottom: 1px solid;
+
+// 	&:hover,
+// 	&:focus,
+// 	&:active {
+
+// 		outline: 0;
+// 		color: $colour-dark;
+// 		text-decoration: none;
+// 	}
+
+// 	&.button {
+
+// 		background-color: $colour-dark;
+// 		color: $colour-light;
+// 		//font-family: $font-head-black;
+// 		padding: 7px 20px;
+// 		font-size: 1.8em;
+// 		text-align: center;
+// 		border-bottom: 0;
+// 		display: block;
+
+// 		&:before {
+
+// 			content: '>>';
+// 			margin-right: 10px;
+// 		}
+
+// 		&:after {
+
+// 			content: '<<';
+// 			margin-left: 10px;
+// 		}
+// 	}
+// }
+
+// b {
+
+
+// }
+ 
+// dfn, cite, em, i {
+
+// 	font-style: italic;
+// }
+ 
+// blockquote, q {
+
+// 	quotes: "" "";
+ 
+// 	&:before,
+// 	&:after {
+// 		content: "";
+// 	}
+// }

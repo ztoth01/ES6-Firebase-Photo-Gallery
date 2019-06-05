@@ -1,0 +1,164 @@
+// Breakpoints
+@mixin bp-xl() {
+
+	@media only screen and (min-width: 1360px) {
+		
+		@content;
+	}
+}
+
+@mixin bp-lg() {
+
+	@media only screen and (min-width: 1200px) {
+		
+		@content;
+	}
+}
+
+@mixin bp-md() {
+
+	@media only screen and (min-width: 992px) {
+	
+		@content;
+	}
+}
+
+@mixin bp-sm() {
+	
+	@media only screen and (min-width: 767px) {
+		
+		@content;
+	}
+}
+
+@mixin bp-xs() {
+	
+	@media only screen and (min-width: 500px) {
+		
+		@content;
+	}
+}
+
+@mixin bp-xxs() {
+
+	@media only screen and (min-width: 350px) {
+
+		@content;
+	}
+}
+
+
+// Center align block element
+@mixin center-block() {
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Transition
+@mixin transition($args...) {
+	
+	-webkit-transition: $args;
+	-moz-transition: $args;
+	-ms-transition: $args;
+	-o-transition: $args;
+	transition: $args;
+}
+
+// Vetically align content
+@mixin center-vertically() {
+	
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+ }
+
+// Turn an element into a circle
+ @mixin circle($width) {
+
+	width: $width;
+	height: $width;
+	overflow: hidden;
+	-webkit-border-radius: $width/2;
+	   -moz-border-radius: $width/2;
+			border-radius: $width/2;
+}
+
+// Animations and keyframe
+@mixin keyframes($animation-name) {
+
+	@-webkit-keyframes #{$animation-name} {
+		@content;
+	}
+	@-moz-keyframes #{$animation-name} {
+		@content;
+	}  
+	@-ms-keyframes #{$animation-name} {
+		@content;
+	}  
+	@keyframes #{$animation-name} {
+		@content;
+	}
+}
+
+@mixin animation($str) {
+	
+	-webkit-animation: #{$str};
+	-moz-animation: #{$str};
+	-ms-animation: #{$str};
+	animation: #{$str};
+}
+
+
+// Long shadow mixin
+// @mixin long-shadow($type, $color, $length, $fadeout: true, $skew: false, $direction: right){
+//   $shadow: '';
+//   @if $skew == false or $type == text{
+//     @if $direction == right {
+//       @for $i from 0 to $length - 1 {
+//         $shadow: $shadow + $i + 'px ' + $i + 'px 0 ' + $color + ',';
+//       }
+//     }
+//     @if $direction == left {
+//       @for $i from 0 to $length - 1 {
+//         $shadow: $shadow + $i * -1 + 'px ' + $i + 'px 0 ' + $color + ',';
+//        }
+//       }
+//      }
+        
+//    @if $fadeout == true{
+//     @for $i from 1 to $length - 1 {
+//       @if $type == text or $skew == false{
+//         @if $direction == right{
+//           $shadow: $shadow + $i + 'px ' + $i + 'px 0 ' +       rgba($color, 1 - $i / $length) + ',';
+//         }
+//         @if $direction == left{
+//           $shadow: $shadow + $i * -1 + 'px ' + $i + 'px 0 ' +       rgba($color, 1 - $i / $length) + ',';
+//         }
+//       }
+//       @if ($type == box) and $skew == true{
+//         @if $direction == right {
+//           $shadow: $shadow + $i + 'px ' + $i + 'px 0 ' + $i * .2 + 'px ' + rgba($color, 1 - $i / $length) + ',';
+//         }
+//         @if $direction == left {
+//           $shadow: $shadow + $i * -1 + 'px ' + $i + 'px 0 ' + $i * .2 + 'px ' + rgba($color, 1 - $i / $length) + ',';
+//         }
+//       }
+//   }
+//   $shadow: $shadow + $length + 'px ' + $length + 'px 0 ' + rgba($color, 0);
+//  }
+//  @if $fadeout == false{
+//    @if $skew == true and ( $type == box ){
+//      @for $i from 0 to $length - 1 {
+//             $shadow: $shadow + $i + 'px ' + $i + 'px 0 ' + $i * .1 + 'px ' + $color + ',';
+//       }
+//    }
+//     $shadow: $shadow + $length + 'px ' + $length + 'px 0 ' + rgba(0,0,0,0);
+//  }
+//  $shadow: unquote($shadow);
+//   @if $type == 'box' {box-shadow: $shadow;}
+//   @if $type == 'text' {text-shadow: $shadow;}
+// }

@@ -1,0 +1,115 @@
+//* {
+//
+//	-webkit-font-smoothing: antialiased;
+//	-moz-osx-font-smoothing: grayscale;
+//}
+//
+//html, body {
+//
+//	height: 100%;
+//}
+//
+body {
+  overflow-x: hidden;
+  line-height: 2;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper{
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+//::selection {
+//
+//	background: $colour-qua;
+//}
+//::-moz-selection {
+//
+//	background: $colour-qua;
+//}
+//
+//img {
+//
+//	max-width: 100%;
+//	height: auto;
+//
+//	&.full {
+//
+//		width: 100%;
+//	}
+//}
+//
+//hr {
+//
+//	width: 100%;
+//	height: 1px;
+//	border: 0;
+//	background: $colour-mid;
+//}
+//
+//.center-block {
+//
+//	@include center-block;
+//}
+//
+//.table {
+//
+//	display: table;
+//	height: 100%;
+//	margin-bottom: 0;
+//
+//	.table-cell {
+//
+//		display: table-cell;
+//		vertical-align: middle;
+//	}
+//}
+//
+//.center-block {
+//
+//	@include center-block;
+//}
+//
+//.center-vertically {
+//
+//	@include center-vertically;
+//}
+//
+//.relative {
+//
+//	position: relative;
+//}
+//
+//.padding-right-0 {
+//
+//	padding-right: 0;
+//}
+//
+//.row-eq-height {
+//
+//	display: -webkit-box;
+//	display: -webkit-flex;
+//	display: -ms-flexbox;
+//	display:         flex;
+//	flex-wrap: wrap;
+//}
+//
+//ul {
+//
+//	margin: 0;
+//	padding: 0;
+//
+//	li {
+//
+//		list-style: none;
+//	}
+//}

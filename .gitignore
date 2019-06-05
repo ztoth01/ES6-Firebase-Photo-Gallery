@@ -1,0 +1,11 @@
+
+node_modules/
+dist/
+.DS_Store
+.idea/
+bundle.js
+bundle.js.map
+*.log
+course.md
+video-notes/
+.vscode
